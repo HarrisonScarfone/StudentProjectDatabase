@@ -1,0 +1,18 @@
+<div class="container-fluid align-items-center mt-5">
+  <% if @projects.present? %>
+    <% @projects.each do |project| %>
+      <%= render "projects/project", project: project %>
+      <br>
+      <hr>
+      <br>
+    <% end %>
+  <% else %>
+  <div class="container-fluid align-items-center mt-5">
+    <%= render "projects/no_projects_found" %>
+  </div>    
+  <% end %>
+</div>
+
+<div class="container-fluid align-items-center mt-5">
+  <%= render "projects/pagination_navigation" %>
+</div>
