@@ -21,12 +21,15 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 
 # use bootstrap for frontend (webpacker > 5 instead of > 4.1)
-gem 'webpacker', '~> 5.0'
+gem 'webpacker', '~> 5.4.3'
 gem 'bootstrap', '~> 5.1.3'
 gem 'jquery-rails'
 
 # need a debugger
 gem 'pry-byebug'
+
+# some testing add-ins
+gem 'rails-controller-testing'
 
 # need to be able to paginate the projects
 gem 'kaminari'

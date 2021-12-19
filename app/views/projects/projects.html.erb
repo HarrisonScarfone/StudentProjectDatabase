@@ -13,6 +13,8 @@
   <% end %>
 </div>
 
-<div class="container-fluid align-items-center mt-5">
-  <%= render "projects/pagination_navigation" %>
-</div>
+<% if @projects&.any? %>
+  <div class="container-fluid align-items-center mt-5">
+    <%= render "projects/pagination_navigation" %>
+  </div>
+<% end %>

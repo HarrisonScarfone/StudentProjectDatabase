@@ -4,16 +4,16 @@
 <div class="container">
   <form action="/projects">
     <div class="form-check form-check-inline">
-      <select id="department" name="department" class="form-control form-control-lg">
-          <option selected>Select Department</option>
+      <select id="department" name="department" class="form-control form-control-lg" required>
+          <option value="">Select Department</option>
           <% departments.each do |department| %>
               <option value=<%= department%>><%= department %></option>
           <% end %>
       </select>
     </div>
     <div class="form-check form-check-inline">
-      <select id="year" name="year" class="form-control form-control-lg">
-          <option selected>Select Year</option>
+      <select id="year" name="year" class="form-control form-control-lg" required>
+          <option value="">Select Year</option>
           <% years.each do |year| %>
               <option value=<%= year %>><%= year %></option>
           <% end %>

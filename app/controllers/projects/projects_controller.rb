@@ -34,16 +34,15 @@ module Projects
         if params['year'].present? && params['year']&.to_i
           validated_params[:department] = params['department'].downcase
           validated_params[:year] = params['year']
-          @validated_params = validated_params
         end
-      elsif
+      elsif params['name'].present?
         # TODO: regex validate params?
-        params['name'].present?
-          validated_params[:name] = params['name']
-          @validated_params = validated_params
+        validated_params[:name] = params['name']
+      else   
+        false
       end
 
-      false
+      @validated_params = validated_params
     end
 
     def projects_to_be_displayed
@@ -53,6 +52,7 @@ module Projects
         department: @validated_params[:department],
         name: @validated_params[:name]
       )
+      
       query.perform()
     end
   end
