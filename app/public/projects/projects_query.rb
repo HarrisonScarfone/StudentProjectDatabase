@@ -1,5 +1,5 @@
 module Projects
-  class ProjectQuery
+  class ProjectsQuery
 
     def initialize(page:, department:, year:, name:)
       @page = page
@@ -13,9 +13,9 @@ module Projects
         projects = Project.page(@page).per(3)
         projects.where(department: @department, year: @year)
       elsif @name.present?
-        Project.joins(:people)
+        Project.left_joins(:people)
         .where("LOWER(people.name)= ?", @name.downcase)
-        .or(Project.joins(:people)
+        .or(Project.left_joins(:people)
         .where("LOWER(title)= ?", @name.downcase))
         .distinct
         .page(@page)

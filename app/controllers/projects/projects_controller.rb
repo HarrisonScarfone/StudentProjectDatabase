@@ -53,14 +53,12 @@ module Projects
     end
 
     def projects_to_be_displayed
-      query = Projects::ProjectQuery.new(
+      Projects::ProjectsQuery.new(
         page: @validated_params[:page],
         year: @validated_params[:year],
         department: @validated_params[:department],
         name: @validated_params[:name]
-      )
-      
-      query.perform()
+      ).perform()
     end
   end
 end
