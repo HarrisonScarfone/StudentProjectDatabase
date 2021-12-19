@@ -11,9 +11,9 @@ module Projects
     def perform
       if @department.present? && @year.present?
         projects = Project.page(@page).per(3)
-        projects = projects.where(department: @department, year: @year)
+        projects.where(department: @department, year: @year)
       elsif @name.present?
-        projects = Project.joins(:people)
+        Project.joins(:people)
         .where("LOWER(people.name)= ?", @name.downcase)
         .or(Project.joins(:people)
         .where("LOWER(title)= ?", @name.downcase))
@@ -21,8 +21,6 @@ module Projects
         .page(@page)
         .per(3)
      end
-
-      projects
     end
   end
 end

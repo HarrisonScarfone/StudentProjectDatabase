@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_08_005051) do
+ActiveRecord::Schema.define(version: 2021_12_04_185914) do
 
   create_table "people", force: :cascade do |t|
     t.string "name"
@@ -24,10 +24,10 @@ ActiveRecord::Schema.define(version: 2021_12_08_005051) do
     t.string "title"
     t.text "abstract"
     t.string "video_link"
+    t.integer "department"
+    t.integer "year"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "department"
-    t.integer "year"
   end
 
 end

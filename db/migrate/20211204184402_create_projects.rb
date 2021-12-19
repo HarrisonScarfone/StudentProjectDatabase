@@ -4,7 +4,7 @@ class CreateProjects < ActiveRecord::Migration[6.0]
       t.string :title
       t.text :abstract
       t.string :video_link
-      t.enum :department
+      t.integer :department
       t.integer :year
 
       t.timestamps

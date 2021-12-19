@@ -1,6 +1,6 @@
 module Projects
   class ProjectsController < ApplicationController
-    before_action :validate_params
+    before_action :validate_params, :populate_navbar_items
 
     def index
       @project = random_project
@@ -13,6 +13,13 @@ module Projects
     end
 
     private
+
+    def populate_navbar_items
+      @populate_navbar__items ||= begin
+        @departments = Projects::DepartmentsQuery.new().perform()
+        @years = Projects::YearsQuery.new().perform()
+      end
+    end
 
     def random_project
       Projects::RandomProjectQuery.new().perform()

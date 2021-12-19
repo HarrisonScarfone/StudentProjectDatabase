@@ -1,15 +1,12 @@
-<% departments = ['Electrical', 'Mechanical', 'Civil', 'Environmental', 'Industrial'] %>
-<% years = ['2020', '2021'] %>
-
 <div class="container">
   <div class="text-white text-center">
-    <h2>Search Projects By Deaprtment and Year</h2>
+    <h2>Search Projects By Department and Year</h2>
   </div>
   <form action="/projects">
     <div class="form-check form-check-inline">
       <select id="department" name="department" class="form-control form-control-lg" required>
           <option value="">Select Department</option>
-          <% departments.each do |department| %>
+          <% @departments.each do |department| %>
               <option value=<%= department%>><%= department %></option>
           <% end %>
       </select>
@@ -17,7 +14,7 @@
     <div class="form-check form-check-inline">
       <select id="year" name="year" class="form-control form-control-lg" required>
           <option value="">Select Year</option>
-          <% years.each do |year| %>
+          <% @years.each do |year| %>
               <option value=<%= year %>><%= year %></option>
           <% end %>
       </select>

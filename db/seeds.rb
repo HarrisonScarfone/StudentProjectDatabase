@@ -14,7 +14,7 @@ projects = [
             that it was about a project that we made that was a project because we had to make a project? anyways 
             this is my project",
         video_link: "https://www.youtube.com/embed/a46Ako2Y970",
-        department: 0,
+        department: 'electrical',
         year: 2021
     },
     {
@@ -24,7 +24,7 @@ projects = [
             that it was about a project that we made that was a project because we had to make a project? anyways 
             this is my project",
         video_link: "https://www.youtube.com/embed/a46Ako2Y970",
-        department: 0,
+        department: 'electrical',
         year: 2021
     },
     {
