@@ -6,7 +6,7 @@ class ProjectTest < ActiveSupport::TestCase
     create(:project,
       title: 'Random Project',
       year: 2021,
-      abstract: 'T' * 51,
+      abstract: 'T' * 100,
       video_link: 'https://www.youtube.com/embed/a46Ako2Y970',
       department: 'electrical'
     )
@@ -17,7 +17,7 @@ class ProjectTest < ActiveSupport::TestCase
       create(:project,
       title: nil,
       year: 2021,
-      abstract: 'T' * 51,
+      abstract: 'T' * 100,
       video_link: 'https://www.youtube.com/embed/a46Ako2Y970',
       department: 'electrical'
       )
@@ -32,7 +32,7 @@ class ProjectTest < ActiveSupport::TestCase
       create(:project,
       title: 'Too Short',
       year: 2021,
-      abstract: 'T' * 101,
+      abstract: 'T' * 100,
       video_link: 'https://www.youtube.com/embed/a46Ako2Y970',
       department: 'electrical'
       )
@@ -62,7 +62,7 @@ class ProjectTest < ActiveSupport::TestCase
       create(:project,
       title: 'Random Project',
       year: 2021,
-      abstract: 'This should fail',
+      abstract: 'T' * 99,
       video_link: 'https://www.youtube.com/embed/a46Ako2Y970',
       department: 'electrical'
       )
