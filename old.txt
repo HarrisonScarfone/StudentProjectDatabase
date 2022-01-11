@@ -1,0 +1,32 @@
+<div class="d-flex justify-content-center">
+    <div class="row justify-content-center">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-5">
+            <div class="fs-1 text-wrap">
+                <%= project.title %>
+            </div>
+            <hr>
+            <div class="fs-2 text">
+                <% project.people.each do |person| %>
+                    <%= render "projects/person", person: person %>
+                    <br>
+                <% end %>
+            </div>
+            <hr>
+            <div class="fs-3 text">
+                <%= project.abstract %>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="video-container float-right">
+            <iframe src=<%= project.video_link %> width=650px height=500px allowfullscreen>
+            </iframe>
+            </div>
+        </div>
+        <div vlass="col-md-2">
+        </div>
+    </div>
+</div>
+
+

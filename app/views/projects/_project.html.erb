@@ -1,28 +1,16 @@
-<div class="container-fluid justify-content-center pt-10 pr-5">
-    <div class="row justify-content-center">
-    <div class="col-6">
-        <div class="fs-1 text-wrap">
-            <%= project.title %>
+<div class="container height-100 d-flex justify-content-center align-items-center">
+    <div class="card"> 
+        <div class="d-flex justify-content-center">
+        <iframe width="640" height="360" src=<%= project.video_link %> frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        <div class="p-3 content"> <span><%= project.title %></span>
         <hr>
-        <div class="fs-2 text">
-            <% project.people.each do |person| %>
-                <%= render "projects/person", person: person %>
-                <br>
-            <% end %>
+                            <% project.people.each do |person| %>
+                    <%= render "projects/person", person: person %>
+                    <br>
+                <% end %>
+                <hr>
+            <p><%= project.abstract %></p>
         </div>
-        <hr>
-        <div class="fs-3 text">
-            <%= project.abstract %>
-        </div>
-    </div>
-    <div class="col-4">
-        <div class="video-container float-right">
-        <iframe src=<%= project.video_link %> width=650px height=500px allowfullscreen>
-        </iframe>
-        </div>
-    </div>
     </div>
 </div>
-
-
