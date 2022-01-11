@@ -1,26 +1,21 @@
-<div class="container">
-  <div class="text-white text-center">
-    <h3>Search Projects By Department and Year</h3>
+<form action="/projects" class="d-inline-flex">
+  <div class="form-check form-check-inline">
+    <select id="department" name="department" class="form-control form-control-lg" required>
+        <option value="">Select Department</option>
+        <% @departments.each do |department| %>
+            <option value=<%= department%>><%= department %></option>
+        <% end %>
+    </select>
   </div>
-  <form action="/projects">
-    <div class="form-check form-check-inline">
-      <select id="department" name="department" class="form-control form-control-lg" required>
-          <option value="">Select Department</option>
-          <% @departments.each do |department| %>
-              <option value=<%= department%>><%= department %></option>
-          <% end %>
-      </select>
-    </div>
-    <div class="form-check form-check-inline">
-      <select id="year" name="year" class="form-control form-control-lg" required>
-          <option value="">Select Year</option>
-          <% @years.each do |year| %>
-              <option value=<%= year %>><%= year %></option>
-          <% end %>
-      </select>
-    </div>
-    <div class="form-check form-check-inline">
-      <button type="submit" class="btn btn-primary btn-lg mb-1">Show Projects</button>
-    </div>
-  </form>
-</div>
+  <div class="form-check form-check-inline">
+    <select id="year" name="year" class="form-control form-control-lg" required>
+        <option value="">Select Year</option>
+        <% @years.each do |year| %>
+            <option value=<%= year %>><%= year %></option>
+        <% end %>
+    </select>
+  </div>
+  <div class="form-check form-check-inline">
+    <button type="submit" class="btn btn-primary btn-lg">Show Projects</button>
+  </div>
+</form>
