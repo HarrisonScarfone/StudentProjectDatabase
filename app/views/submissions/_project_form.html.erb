@@ -1,0 +1,47 @@
+<div class="container px-5 my-5">
+    <form action="/createDownload" id="contactForm">
+        <div class="mb-3">
+            <label class="form-label" for="department">Department</label>
+            <select name="department" class="form-select" id="department" aria-label="Department">
+                <% Projects::DepartmentsQuery.new().perform().each do |department| %>
+                    <option value=<%= department %>><%= department %></option>
+                <% end %>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="projectTitle">Project Title</label>
+            <input class="form-control" name="title" id="projectTitle" type="text" placeholder="Project Title"/>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="year">Year</label>
+            <input class="form-control" name="year" id="year" type="text" placeholder="Year" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="groupMember1">Group Member 1</label>
+            <input class="form-control" name="groupMember1" id="groupMember1" type="text" placeholder="Group Member 1" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="groupMember2">Group Member 2</label>
+            <input class="form-control" name="groupMember2" id="groupMember2" type="text" placeholder="Group Member 2" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="groupMember3">Group Member 3</label>
+            <input class="form-control" name="groupMember3" id="groupMember3" type="text" placeholder="Group Member 3" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="groupMember4">Group Member 4</label>
+            <input class="form-control" name="groupMember4" id="groupMember4" type="text" placeholder="Group Member 4" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="videoLink">Video Link (Youtube embed link format)</label>
+            <input class="form-control" name="videoLink" id="videoLink" type="text" placeholder="Video Link" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="projectAbstractDescription">Project Abstract/Description</label>
+            <textarea class="form-control" name="abstract" id="projectAbstractDescription" type="text" placeholder="Project Abstract/Description" style="height: 10rem;"></textarea>
+        </div>
+        <div class="d-grid">
+            <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
+        </div>
+    </form>
+</div>

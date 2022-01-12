@@ -2,7 +2,7 @@
   <div class="form-check form-check-inline">
     <select id="department" name="department" class="form-control form-control-lg" required>
         <option value="">Select Department</option>
-        <% @departments.each do |department| %>
+        <% Projects::DepartmentsQuery.new().perform().each do |department| %>
             <option value=<%= department%>><%= department %></option>
         <% end %>
     </select>
@@ -10,7 +10,7 @@
   <div class="form-check form-check-inline">
     <select id="year" name="year" class="form-control form-control-lg" required>
         <option value="">Select Year</option>
-        <% @years.each do |year| %>
+        <% Projects::YearsQuery.new().perform().each do |year| %>
             <option value=<%= year %>><%= year %></option>
         <% end %>
     </select>
@@ -19,3 +19,4 @@
     <button type="submit" class="btn btn-primary btn-lg">Show Projects</button>
   </div>
 </form>
+

@@ -26,5 +26,7 @@ class Project < ApplicationRecord
         message: 'must be at least 100 characters'
     }
 
+    validates :year, presence: true
+
     validates :department, presence: true
 end
