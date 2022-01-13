@@ -1,13 +1,13 @@
 module Projects
-    class DepartmentQueryTest < ActiveSupport::TestCase
-        test '.preform returns departments as a array of titlelized enum keys' do
-            departments = ['Electrical', 'Mechanical', 'Civil', 'Environmental', 'Industrial']
+  class DepartmentQueryTest < ActiveSupport::TestCase
+    test '.preform returns departments as a array of titlelized enum keys' do
+      departments = ['Electrical', 'Mechanical', 'Civil', 'Environmental', 'Industrial']
 
-            result = Projects::DepartmentsQuery.new().perform()
+      result = Projects::DepartmentsQuery.new().perform()
 
-            assert_not_nil result
-            assert_equal departments, result
-        end
+      assert_not_nil result
+      assert_equal departments, result
     end
+  end
 end
   

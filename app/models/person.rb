@@ -1,5 +1,5 @@
 class Person < ApplicationRecord
-    belongs_to :project
+  belongs_to :project
 
-    validates :name, presence: true
+  validates :name, presence: true
 end

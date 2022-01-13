@@ -1,18 +1,18 @@
 <form action="/projects" class="d-inline-flex">
   <div class="form-check form-check-inline">
     <select id="department" name="department" class="form-control form-control-lg" required>
-        <option value="">Select Department</option>
-        <% Projects::DepartmentsQuery.new().perform().each do |department| %>
-            <option value=<%= department%>><%= department %></option>
-        <% end %>
+      <option value="">Select Department</option>
+      <% Projects::DepartmentsQuery.new().perform().each do |department| %>
+        <option value=<%= department%>><%= department %></option>
+      <% end %>
     </select>
   </div>
   <div class="form-check form-check-inline">
     <select id="year" name="year" class="form-control form-control-lg" required>
-        <option value="">Select Year</option>
-        <% Projects::YearsQuery.new().perform().each do |year| %>
-            <option value=<%= year %>><%= year %></option>
-        <% end %>
+      <option value="">Select Year</option>
+      <% Projects::YearsQuery.new().perform().each do |year| %>
+        <option value=<%= year %>><%= year %></option>
+      <% end %>
     </select>
   </div>
   <div class="form-check form-check-inline">

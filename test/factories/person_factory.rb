@@ -1,5 +1,5 @@
 FactoryBot.define do
-    factory :person do
-        name { 'John Doe' }
-    end
+  factory :person do
+    name { 'John Doe' }
+  end
 end

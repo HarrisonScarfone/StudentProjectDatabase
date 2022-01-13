@@ -7,24 +7,19 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha3/css/bootstrap.min.css" />
+
     <style>
-        main > .container {
-            padding: 60px 15px 0;
-        }
+      main > .container {
+          padding: 60px 15px 0;
+      }
     </style>
   </head>
-
   <body class="d-flex flex-column min-vh-100">
-
-  <%= render "layouts/navbar" %>
-
-  <main>
-    <%= yield %>
-  </main>
-  
-  <%= render "layouts/footer" %>
-
+    <%= render "layouts/navbar" %>
+    <main>
+      <%= yield %>
+    </main>
+    <%= render "layouts/footer" %>
   </body>
 </html>

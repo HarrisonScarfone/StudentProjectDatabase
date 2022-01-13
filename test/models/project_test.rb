@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class ProjectTest < ActiveSupport::TestCase
-
   test '.save saves a project with valid parameters' do
     create(:project,
       title: 'Random Project',

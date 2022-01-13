@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class ProjectsControllerTest < ActionDispatch::IntegrationTest
-
   setup do
     @project1 = create(:project)
     @project2 = create(:project)

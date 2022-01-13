@@ -1,12 +1,12 @@
-  <% if @projects.present? %>
-    <% @projects.each do |project| %>
-      <%= render "projects/project", project: project %>
-    <% end %>
-  <% else %>
+<% if @projects.present? %>
+  <% @projects.each do |project| %>
+    <%= render "projects/project", project: project %>
+  <% end %>
+<% else %>
   <div class="container-fluid align-items-center mt-5">
     <%= render "projects/no_projects_found" %>
   </div>    
-  <% end %>
+<% end %>
 
 <% if @projects&.any? %>
   <div class="container-fluid align-items-center mt-5">

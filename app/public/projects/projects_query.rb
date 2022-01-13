@@ -1,6 +1,5 @@
 module Projects
   class ProjectsQuery
-
     def initialize(page:, department:, year:, name:)
       @page = page
       @department = department

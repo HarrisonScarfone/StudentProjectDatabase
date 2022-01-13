@@ -1,67 +1,49 @@
 <footer class="footer sticky-bottom mt-auto py-3 bg-dark text-white text-center">
-    <div class="container p-4">
-        <!--Grid row-->
-        <div class="row">
-        <!--Grid column-->
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Powered by UWinEng Society</h5>
-
-            <p>
-                <%= image_tag "misc/engsoc_logo", size: "100x100" %>
-            </p>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
-
-            <ul class="list-unstyled mb-0">
-            <li>
-                <%= link_to "Create Submission", controller: "submissions", action: "create" %>
-            </li>
-            <li>
-                <a href="#!" class="text-white">Link 2</a>
-            </li>
-            <li>
-                <a href="#!" class="text-white">Link 3</a>
-            </li>
-            <li>
-                <a href="#!" class="text-white">Link 4</a>
-            </li>
-            </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-0">Links</h5>
-
-            <ul class="list-unstyled">
-            <li>
-                <a href="#!" class="text-white">Link 1</a>
-            </li>
-            <li>
-                <a href="#!" class="text-white">Link 2</a>
-            </li>
-            <li>
-                <a href="#!" class="text-white">Link 3</a>
-            </li>
-            <li>
-                <a href="#!" class="text-white">Link 4</a>
-            </li>
-            </ul>
-        </div>
-        <!--Grid column-->
-        </div>
-        <!--Grid row-->
+  <div class="container p-4">
+    <div class="row">
+    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+      <h5 class="text-uppercase">Powered by UWinEng Society</h5>
+      <p>
+        <%= image_tag "misc/engsoc_logo", size: "100x100" %>
+      </p>
     </div>
-    <!-- Grid container -->
+    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      <h5 class="text-uppercase">Explore</h5>
 
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2021 Copyright:
-        <a class="text-white" href=https://windsorengsoc.ca/">UWindsor Engineering Society</a>
+      <ul class="list-unstyled mb-0">
+      <li>
+        <a href="https://www.uwindsor.ca/" class="text-white">University of Windsor</a>
+      </li>
+      <li>
+        <a href="https://www.uwindsor.ca/engineering/" class="text-white">Windsor Engineering</a>
+      </li>
+      <li>
+        <a href="https://www.uwindsor.ca/engineering/771/capstone-design" class="text-white">Capstone Engineering Projects</a>
+      </li>
+      <li>
+        <a href="https://www.peo.on.ca/" class="text-white">PEO</a>
+      </li>
+      </ul>
     </div>
-    <!-- Copyright -->
+    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      <h5 class="text-uppercase">For Students</h5>
+
+      <ul class="list-unstyled mb-0">
+      <li>
+        <%= link_to "Create Submission", {controller: "submissions", action: "create"}, class: "text-white" %>
+      </li>
+
+      <li>
+        <a href="https://windsorengsoc.ca/" class="text-white">Windsor EngSoc</a>
+      </li>
+      <li>
+        <a href="https://www.essco.ca/" class="text-white">ESSCO</a>
+      </li>
+      </ul>
+    </div>
+    </div>
+  </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright: <a class="text-white" href=https://windsorengsoc.ca/">UWindsor Engineering Society</a>
+  </div>
 </footer>
