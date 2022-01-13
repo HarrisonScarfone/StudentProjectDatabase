@@ -3,14 +3,14 @@
     <div class="d-flex justify-content-center">
       <iframe width="640" height="360" src=<%= project.video_link %> frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <div class="p-3 content"> <span><%= project.title %></span>
+    <div class="p-3 content"> <span class="fs-4"><%= project.title %></span>
       <hr>
       <% project.people.each do |person| %>
-        <%= render "projects/person", person: person %>
+        <strong class="fs-5"><%= render "projects/person", person: person %></strong>
         <br>
       <% end %>
       <hr>
-      <p><%= project.abstract %></p>
+      <p class="fs-5"><%= project.abstract %></p>
     </div>
   </div>
 </div>
