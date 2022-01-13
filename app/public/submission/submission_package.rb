@@ -28,7 +28,7 @@ module Submission
         group_members: []
       }
   
-      people_as_array.each do |person|
+      @people_as_array.each do |person|
         submission[:group_members] = submission[:group_members] + [person] unless person.blank?
       end
   
@@ -43,7 +43,6 @@ module Submission
     end
 
     def attach_action_error
-      byebug
       if @action != "create_download"
         @errors.append('Incorrect action detected.')
         @action = false
@@ -53,11 +52,11 @@ module Submission
     # if the person model changes to include errors, messages should be included here
     def attach_project_errors
       project = Project.new(
-        department: @project_as_hash['department']&.downcase,
-        video_link: @project_as_hash['videoLink'],
-        title: @project_as_hash['title'],
-        abstract: @project_as_hash['abstract'],
-        year: @project_as_hash['year']
+        department: @project_as_hash[:department]&.downcase,
+        video_link: @project_as_hash[:video_link],
+        title: @project_as_hash[:title],
+        abstract: @project_as_hash[:abstract],
+        year: @project_as_hash[:year]
       )
 
       if project.valid?
