@@ -36,7 +36,7 @@ gem 'rails-controller-testing'
 gem 'kaminari'
 
 # use factorybot for test fixtues
-gem "factory_bot_rails"
+gem 'factory_bot_rails'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
