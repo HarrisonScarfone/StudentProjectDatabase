@@ -17,5 +17,7 @@ jobs:
         uses: ruby/setup-ruby@v1
       - name: Install dependencies
         run: bundle install
+      - name: Webpacker workaround
+        run: bundle exec rake webpacker:compile
       - name: Run tests
-        run: RAILS_ENV=test bundle exec rake test
+        run: bundle exec rake test
