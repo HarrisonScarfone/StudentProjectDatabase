@@ -3,7 +3,7 @@ require 'json'
 desc 'Recursively verify submission files in json/staged_json'
 task verify_staged_files: [:environment] do
   staging_verifier = StagingVerifier.new()
-  staging_verifier.verify_staging_directory
+  staging_verifier.execute
 end
 
 class StagingVerifier
@@ -15,7 +15,7 @@ class StagingVerifier
     @successful_moves = []
   end
 
-  def verify_staging_directory
+  def execute
     filepaths = load_json_files_from_staging_directory
 
     filepaths.each do |filepath|
