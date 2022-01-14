@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
+  unit_tests:
 
     runs-on: ubuntu-latest
 
@@ -18,4 +18,4 @@ jobs:
       - name: Install dependencies
         run: bundle install
       - name: Run linting without autocorrect
-        run: bundle exec rake test
+        run: rails test
