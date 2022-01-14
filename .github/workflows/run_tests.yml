@@ -1,14 +1,21 @@
-name: Run Unit Tests
+name: Unit Tests
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   test:
+
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v2
-    - uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.7.4
-        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    - run: bundle exec rake test
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+      - name: Install dependencies
+        run: bundle install
+      - name: Run linting without autocorrect
+        run: bundle exec rake test
