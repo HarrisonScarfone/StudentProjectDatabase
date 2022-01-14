@@ -6,7 +6,7 @@ module Submission
       @people_as_array = people_as_array
 
       @project = nil
-      @people = nil
+      @people = []
 
       @errors = []
 
@@ -14,7 +14,7 @@ module Submission
     end
 
     def valid_submission?
-      @action && @project&.valid?
+      @action && (@project.nil? ? false : @project&.valid?) && @people.any?
     end
 
     def error_messages_as_string
@@ -22,6 +22,8 @@ module Submission
     end
 
     def generate_json
+      return unless valid_submission?
+
       submission = {
         department: @project['department'],
         year: @project['year'],
@@ -47,7 +49,7 @@ module Submission
     end
 
     def attach_action_error
-      if @action != "create_download"
+      if @action != 'create_download'
         @errors.append('Incorrect action detected.')
         @action = false
       end
@@ -75,7 +77,7 @@ module Submission
       @people_as_array.each do |person|
         person_model = Person.new(name: person)
 
-        if person_model.valid?
+        if person_model.name
           @people.append(person_model)
         else
           @errors += person_model&.errors&.full_messages
