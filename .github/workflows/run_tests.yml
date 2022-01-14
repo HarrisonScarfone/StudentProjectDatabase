@@ -17,5 +17,5 @@ jobs:
         uses: ruby/setup-ruby@v1
       - name: Install dependencies
         run: bundle install
-      - name: Run linting without autocorrect
+      - name: Run tests
         run: bundle exec rake test
