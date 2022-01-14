@@ -1,6 +1,6 @@
 require 'json'
 
-desc 'Recursively verify submission files'
+desc 'Recursively verify submission files in json/staged_json'
 task verify_staged_files: [:environment] do
   staging_verifier = StagingVerifier.new()
   staging_verifier.verify_staging_directory
