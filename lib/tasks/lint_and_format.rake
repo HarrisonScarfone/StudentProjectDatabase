@@ -24,4 +24,6 @@ task :lint_and_format, [:disableAutocorrect] do |_, args|
 
   puts overall
   puts "\n"
+
+  return 1 if overall.join.include?('Offenses:')
 end
