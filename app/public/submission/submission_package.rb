@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Submission
   class SubmissionPackage
     def initialize(action:, project_as_hash:, people_as_array:)
@@ -32,11 +34,11 @@ module Submission
         video_link: @project['video_link'],
         group_members: []
       }
-  
+
       @people_as_array.each do |person|
         submission[:group_members] = submission[:group_members] + [person] unless person.blank?
       end
-  
+
       submission.to_json
     end
 
@@ -86,4 +88,3 @@ module Submission
     end
   end
 end
-    

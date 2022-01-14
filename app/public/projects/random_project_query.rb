@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Projects
   class RandomProjectQuery
     def perform
@@ -5,5 +7,3 @@ module Projects
     end
   end
 end
-
-

@@ -1,9 +1,10 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
+  root to: 'projects#index'
 
-    root to: 'projects#index'
+  get '/projects', to: 'projects#projects'
 
-    get '/projects', to: "projects#projects"
-
-    get '/submissionCreate', to: "submissions#create"
-    get '/createDownload', to: "submissions#create_download"
+  get '/submissionCreate', to: 'submissions#create'
+  get '/createDownload', to: 'submissions#create_download'
 end

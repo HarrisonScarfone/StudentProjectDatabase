@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class PersonTest < ActiveSupport::TestCase
@@ -22,6 +24,6 @@ class PersonTest < ActiveSupport::TestCase
       create(:person, name: 'George McGeorge', project_id: nil)
     end
 
-    assert_equal "Validation failed: Project must exist", exception.message
+    assert_equal 'Validation failed: Project must exist', exception.message
   end
 end

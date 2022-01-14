@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Projects
   class ProjectsQuery
     def initialize(page:, department:, year:, name:)
@@ -13,16 +15,13 @@ module Projects
         projects.where(department: @department, year: @year)
       elsif @name.present?
         Project.left_joins(:people)
-        .where("LOWER(people.name)= ?", @name.downcase)
-        .or(Project.left_joins(:people)
-        .where("LOWER(title)= ?", @name.downcase))
-        .distinct
-        .page(@page)
-        .per(3)
-     end
+               .where('LOWER(people.name)= ?', @name.downcase)
+               .or(Project.left_joins(:people)
+        .where('LOWER(title)= ?', @name.downcase))
+               .distinct
+               .page(@page)
+               .per(3)
+      end
     end
   end
 end
-
-
-    

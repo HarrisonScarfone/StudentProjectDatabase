@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Submission
   class SubmissionPackageTest < ActiveSupport::TestCase
     setup do
@@ -5,12 +7,12 @@ module Submission
 
       @project_as_hash = {
         department: 'electrical',
-        video_link: "https://www.youtube.com/embed/a46Ako2Y970",
+        video_link: 'https://www.youtube.com/embed/a46Ako2Y970',
         title: 'A' * 10,
         abstract: 'a' * 100,
-        year: 2022,
+        year: 2022
       }
-      
+
       @people_as_array = [
         'Bob McBobbyBob',
         'Cindy McCindyCind'
@@ -65,7 +67,7 @@ module Submission
       )
 
       assert submission_package.error_messages_as_string.instance_of?(String)
-      assert_equal submission_package.error_messages_as_string, "Incorrect action detected."
+      assert_equal submission_package.error_messages_as_string, 'Incorrect action detected.'
     end
 
     test '.error_messages_as_string returns a multiple error messages as a string' do
@@ -80,7 +82,7 @@ module Submission
         "itle can't be blank, Title must be at least 10 characters, Abstract can't be blan",
         "k, Abstract must be at least 100 characters, Year can't be blank, Department ca",
         "n't be blank"
-      ].join('')
+      ].join
 
       assert submission_package.error_messages_as_string.instance_of?(String)
       assert_equal submission_package.error_messages_as_string, expected_result
@@ -104,11 +106,11 @@ module Submission
       )
 
       expected_result = [
-        "{\"department\":\"electrical\",\"year\":2022,\"title\":\"AAAAAAAAAA\",",
-        "\"abstract\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-        "aaaaaaaaaaaaaaaaaaaaaaaaaa\",\"video_link\":\"https://www.youtube.com/embed/a46Ako2Y970\",",
-        "\"group_members\":[\"Bob McBobbyBob\",\"Cindy McCindyCind\"]}"
-      ].join('')
+        '{"department":"electrical","year":2022,"title":"AAAAAAAAAA",',
+        '"abstract":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+        'aaaaaaaaaaaaaaaaaaaaaaaaaa","video_link":"https://www.youtube.com/embed/a46Ako2Y970",',
+        '"group_members":["Bob McBobbyBob","Cindy McCindyCind"]}'
+      ].join
 
       assert_equal submission_package.generate_json, expected_result
     end

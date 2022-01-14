@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ProjectsController < ApplicationController
   before_action :validate_params
 
@@ -14,7 +16,7 @@ class ProjectsController < ApplicationController
   private
 
   def random_project
-    Projects::RandomProjectQuery.new().perform()
+    Projects::RandomProjectQuery.new.perform
   end
 
   def validate_params
@@ -22,12 +24,10 @@ class ProjectsController < ApplicationController
       page: 1,
       department: nil,
       year: nil,
-      name: nil,
+      name: nil
     }
 
-    if params['page']&.to_i
-      validated_params[:page] = params['page']
-    end
+    validated_params[:page] = params['page'] if params['page']&.to_i
 
     if params['department'].present? && Project.departments.keys.include?(params['department'].downcase)
       if params['year'].present? && params['year']&.to_i
@@ -37,7 +37,7 @@ class ProjectsController < ApplicationController
     elsif params['name'].present?
       # TODO: regex validate params?
       validated_params[:name] = params['name']
-    else   
+    else
       false
     end
 
@@ -50,6 +50,6 @@ class ProjectsController < ApplicationController
       year: @validated_params[:year],
       department: @validated_params[:department],
       name: @validated_params[:name]
-    ).perform()
+    ).perform
   end
 end

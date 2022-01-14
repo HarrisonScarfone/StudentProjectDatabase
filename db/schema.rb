@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,31 +12,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_13_174956) do
-
-  create_table "people", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.integer "project_id"
-    t.index ["project_id"], name: "index_people_on_project_id"
+ActiveRecord::Schema.define(version: 20_220_113_174_956) do
+  create_table 'people', force: :cascade do |t|
+    t.string 'name'
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
+    t.integer 'project_id'
+    t.index ['project_id'], name: 'index_people_on_project_id'
   end
 
-  create_table "projects", force: :cascade do |t|
-    t.string "title"
-    t.text "abstract"
-    t.string "video_link"
-    t.integer "department"
-    t.integer "year"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+  create_table 'projects', force: :cascade do |t|
+    t.string 'title'
+    t.text 'abstract'
+    t.string 'video_link'
+    t.integer 'department'
+    t.integer 'year'
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
   end
 
-  create_table "tokens", force: :cascade do |t|
-    t.string "value"
-    t.boolean "voided"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+  create_table 'tokens', force: :cascade do |t|
+    t.string 'value'
+    t.boolean 'voided'
+    t.datetime 'created_at', precision: 6, null: false
+    t.datetime 'updated_at', precision: 6, null: false
   end
-
 end

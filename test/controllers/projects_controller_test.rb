@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class ProjectsControllerTest < ActionDispatch::IntegrationTest
@@ -13,7 +15,7 @@ class ProjectsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test '#projects renders no projects without valid params' do 
+  test '#projects renders no projects without valid params' do
     get '/projects'
 
     assert_response :success
@@ -21,16 +23,16 @@ class ProjectsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test '#projects renders projects from a valid set filter params' do
-    get '/projects', params: { 'department': 'electrical', 'year': 2021 }
+    get '/projects', params: { department: 'electrical', year: 2021 }
 
     assert_response :success
-    assert_equal 2, assigns(:projects).count()
+    assert_equal 2, assigns(:projects).count
   end
 
   test '#projects renders projects from search' do
-    get '/projects', params: { 'name': @project1.title }
-    
+    get '/projects', params: { name: @project1.title }
+
     assert_response :success
-    assert_equal 2, assigns(:projects).count()
+    assert_equal 2, assigns(:projects).count
   end
 end

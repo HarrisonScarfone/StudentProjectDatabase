@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class SubmissionsController < ApplicationController
   def create
-    render "submissions/create"
+    render 'submissions/create'
   end
 
   def create_download
@@ -17,7 +19,7 @@ class SubmissionsController < ApplicationController
 
   def generate_submission_package
     Submission::SubmissionPackage.new(
-      action: params["action"],
+      action: params['action'],
       project_as_hash: {
         department: params['department'].downcase,
         video_link: params['videoLink'],
