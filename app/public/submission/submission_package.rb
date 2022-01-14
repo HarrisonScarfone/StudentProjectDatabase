@@ -24,7 +24,7 @@ module Submission
         year: @project['year'],
         title: @project['title'],
         abstract: @project['abstract'],
-        video_link: @project['videoLink'],
+        video_link: @project['video_link'],
         group_members: []
       }
   

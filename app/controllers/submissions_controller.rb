@@ -16,7 +16,7 @@ class SubmissionsController < ApplicationController
   private
 
   def generate_submission_package
-    ::Submission::SubmissionPackage.new(
+    Submission::SubmissionPackage.new(
       action: params["action"],
       project_as_hash: {
         department: params['department'].downcase,
