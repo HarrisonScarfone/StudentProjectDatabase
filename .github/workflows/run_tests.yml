@@ -19,7 +19,5 @@ jobs:
           bundler-cache: true
       - name: Install dependencies
         run: bundle install
-      - name: Configure webpacker
-        run: rails webpacker:install
       - name: Run linting without autocorrect
         run: bundle exec rake test
