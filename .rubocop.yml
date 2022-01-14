@@ -3,9 +3,17 @@
 AllCops:
   NewCops: enable
 
+# style changes
+###########################
 Style/Documentation:
   Enabled: false
 
+Style/GuardClause:
+  Enabled: false
+###########################
+
+# metrics changes
+###########################
 Metrics/ClassLength:
   Max: 500
 
@@ -22,6 +30,4 @@ Metrics/CyclomaticComplexity:
 
 Metrics/PerceivedComplexity:
   Max: 100
-
-Style/GuardClause:
-  Enabled: false
+###########################
