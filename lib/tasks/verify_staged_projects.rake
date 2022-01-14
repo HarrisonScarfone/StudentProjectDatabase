@@ -3,7 +3,6 @@ require 'json'
 desc 'Say hello!'
 task verify_staged_projects: [:environment] do
   staging_verifier = StagingVerifier.new()
-
   staging_verifier.verify_staging_directory
 end
 
@@ -101,7 +100,7 @@ class StagingVerifier
   end
 
   def report_results
-    puts "\n**********\nResults Report: \n**********\n"
+    puts "\n*********************\nResults Report: \n*********************\n"
 
     puts "\nSuccessfully Validated and Moved:\n*********************\n" if @successful_moves.any?
     @successful_moves.each do |success|
@@ -113,6 +112,6 @@ class StagingVerifier
       puts "#{error[:filepath]}: #{error[:message]}"
     end
 
-    puts "\n**********\n"
+    puts "\n*********************\n"
   end
 end

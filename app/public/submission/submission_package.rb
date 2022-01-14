@@ -4,7 +4,10 @@ module Submission
       @action = action
       @project_as_hash = project_as_hash
       @people_as_array = people_as_array
+
       @project = nil
+      @people = nil
+
       @errors = []
 
       attach_errors
@@ -40,6 +43,7 @@ module Submission
     def attach_errors
       attach_action_error
       attach_project_errors
+      attach_people_errors
     end
 
     def attach_action_error
@@ -63,6 +67,19 @@ module Submission
         @project = project
       else
         @errors += project&.errors&.full_messages
+      end
+    end
+
+    # a person is just a string containing a name right now, can be converted to a hash to store more info
+    def attach_people_errors
+      @people_as_array.each do |person|
+        person_model = Person.new(name: person)
+
+        if person_model.valid?
+          @people.append(person_model)
+        else
+          @errors += person_model&.errors&.full_messages
+        end
       end
     end
   end
