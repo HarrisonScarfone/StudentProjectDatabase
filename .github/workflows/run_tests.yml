@@ -22,4 +22,4 @@ jobs:
       - name: Configure webpacker
         run: rails webpacker:install
       - name: Run linting without autocorrect
-        run: rails test
+        run: bundle exec rake test
