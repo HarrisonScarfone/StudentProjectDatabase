@@ -17,6 +17,8 @@ jobs:
         uses: ruby/setup-ruby@v1
       - name: Install dependencies
         run: bundle install
+      - name: Yarn update
+        run: yarn install --check-files
       - name: Webpacker workaround
         run: bundle exec rake webpacker:compile
       - name: Run tests
