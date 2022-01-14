@@ -9,10 +9,16 @@ NAMED_DIRECTORIES = [
 ].freeze
 
 desc 'Recursively run linting and formatting on directories named in rake task.'
-task :lint_and_format do
+task :lint_and_format, [:disableAutocorrect] do |_, args|
   overall = []
   NAMED_DIRECTORIES.each do |dir|
-    result = `rubocop #{dir} --auto-correct-all`
+    result =
+      if args[:disableAutocorrect] == 'disableautocorrect'
+        `rubocop #{dir}`
+      else
+        `rubocop #{dir} --auto-correct-all`
+      end
+
     overall.append(result)
   end
 
