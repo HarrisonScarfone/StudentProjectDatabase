@@ -16,7 +16,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
       - name: Install dependencies
-        uses: bundle install
+        run: bundle install
       - name: Yarn update
         run: yarn install --check-files
       - name: Webpacker workaround
