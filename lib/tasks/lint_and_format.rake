@@ -5,7 +5,8 @@ NAMED_DIRECTORIES = [
   './config',
   './db',
   './lib',
-  './test'
+  './test',
+  'Gemfile'
 ].freeze
 
 desc 'Recursively run linting and formatting on directories named in rake task.'
