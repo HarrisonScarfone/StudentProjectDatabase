@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.4'
+ruby '2.7.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
@@ -25,9 +25,6 @@ gem 'solargraph'
 
 # use bootstrap for frontend (webpacker > 5 instead of > 4.1)
 gem 'webpacker', '> 5'
-
-# need a debugger
-gem 'pry-byebug'
 
 # some testing add-ins
 gem 'rails-controller-testing'

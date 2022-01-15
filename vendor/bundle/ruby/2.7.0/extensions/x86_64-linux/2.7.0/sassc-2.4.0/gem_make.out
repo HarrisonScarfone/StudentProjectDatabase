@@ -1,13 +1,12 @@
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
-/usr/bin/ruby2.7 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20220114-50281-stnc1h.rb extconf.rb
+/usr/share/rvm/rubies/ruby-2.7.0/bin/ruby -I /usr/share/rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20220115-20128-2jz8do.rb extconf.rb
 creating Makefile
 
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
-make DESTDIR\= clean
+make "DESTDIR=" clean
 
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
-make DESTDIR\=
-compiling ./libsass/src/memory/allocator.cpp
+make "DESTDIR="
 compiling ./libsass/src/ast.cpp
 compiling ./libsass/src/ast2c.cpp
 compiling ./libsass/src/ast_fwd_decl.cpp
@@ -50,6 +49,8 @@ compiling ./libsass/src/inspect.cpp
 compiling ./libsass/src/json.cpp
 compiling ./libsass/src/lexer.cpp
 compiling ./libsass/src/listize.cpp
+compiling ./libsass/src/memory/allocator.cpp
+compiling ./libsass/src/memory/shared_ptr.cpp
 compiling ./libsass/src/operators.cpp
 compiling ./libsass/src/output.cpp
 compiling ./libsass/src/parser.cpp
@@ -63,7 +64,6 @@ compiling ./libsass/src/sass2scss.cpp
 compiling ./libsass/src/sass_context.cpp
 compiling ./libsass/src/sass_functions.cpp
 compiling ./libsass/src/sass_values.cpp
-compiling ./libsass/src/memory/shared_ptr.cpp
 compiling ./libsass/src/source.cpp
 compiling ./libsass/src/source_map.cpp
 compiling ./libsass/src/stylesheet.cpp
@@ -76,5 +76,5 @@ compiling ./libsass/src/values.cpp
 linking shared-object sassc/libsass.so
 
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
-make DESTDIR\= install
-/usr/bin/install -c -m 0755 libsass.so ./.gem.20220114-50281-192ecm4/sassc
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 libsass.so ./.gem.20220115-20128-ak5cq5/sassc

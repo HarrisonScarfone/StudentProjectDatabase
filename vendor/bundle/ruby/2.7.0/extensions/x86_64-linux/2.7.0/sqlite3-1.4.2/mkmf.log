@@ -1,7 +1,7 @@
 "pkg-config --exists sqlite3"
 | pkg-config --libs sqlite3
 => "-lsqlite3\n"
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-2.7  -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -12,7 +12,7 @@ checked program was:
 6: }
 /* end */
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-2.7 -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lsqlite3 -lm   -lc"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -37,7 +37,7 @@ libs: -lsqlite3
 
 find_header: checking for sqlite3.h... -------------------- yes
 
-"x86_64-linux-gnu-gcc -E -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC   conftest.c -o conftest.i"
+"gcc -E -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC   conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -49,13 +49,17 @@ checked program was:
 
 find_library: checking for pthread_create() in -lpthread... -------------------- yes
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic      -lsqlite3 -lruby-2.7 -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic      -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lpthread  -lsqlite3 -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:14:57: error: ‘pthread_create’ undeclared (first use in this function); did you mean ‘rb_thread_create’?
    14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))pthread_create; return !p; }
       |                                                         ^~~~~~~~~~~~~~
       |                                                         rb_thread_create
 conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -74,7 +78,7 @@ checked program was:
 14: int t(void) { void ((*volatile p)()); p = (void ((*)()))pthread_create; return !p; }
 /* end */
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic      -lsqlite3 -lruby-2.7 -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic      -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lpthread  -lsqlite3 -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -98,7 +102,7 @@ checked program was:
 
 have_library: checking for -ldl... -------------------- yes
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lpthread  -lsqlite3 -lruby-2.7 -ldl -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lpthread  -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -ldl -lpthread  -lsqlite3 -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -122,12 +126,16 @@ checked program was:
 
 find_library: checking for sqlite3_libversion_number() in -lsqlite3... -------------------- yes
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -ldl -lpthread  -lsqlite3 -lruby-2.7 -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -ldl -lpthread  -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:14:57: error: ‘sqlite3_libversion_number’ undeclared (first use in this function)
    14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_libversion_number; return !p; }
       |                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~
 conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -146,7 +154,7 @@ checked program was:
 14: int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_libversion_number; return !p; }
 /* end */
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -ldl -lpthread  -lsqlite3 -lruby-2.7 -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -ldl -lpthread  -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -170,7 +178,7 @@ checked program was:
 
 have_func: checking for rb_proc_arity()... -------------------- yes
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -lruby-2.7 -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -193,7 +201,7 @@ checked program was:
 
 have_func: checking for rb_integer_pack()... -------------------- yes
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -lruby-2.7 -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -216,12 +224,16 @@ checked program was:
 
 have_func: checking for sqlite3_initialize()... -------------------- yes
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -lruby-2.7 -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:14:57: error: ‘sqlite3_initialize’ undeclared (first use in this function)
    14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_initialize; return !p; }
       |                                                         ^~~~~~~~~~~~~~~~~~
 conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -240,7 +252,7 @@ checked program was:
 14: int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_initialize; return !p; }
 /* end */
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -lruby-2.7 -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -264,12 +276,16 @@ checked program was:
 
 have_func: checking for sqlite3_backup_init()... -------------------- yes
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -lruby-2.7 -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:14:57: error: ‘sqlite3_backup_init’ undeclared (first use in this function)
    14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_backup_init; return !p; }
       |                                                         ^~~~~~~~~~~~~~~~~~~
 conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -288,7 +304,7 @@ checked program was:
 14: int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_backup_init; return !p; }
 /* end */
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -lruby-2.7 -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -312,12 +328,16 @@ checked program was:
 
 have_func: checking for sqlite3_column_database_name()... -------------------- yes
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -lruby-2.7 -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:14:57: error: ‘sqlite3_column_database_name’ undeclared (first use in this function)
    14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_column_database_name; return !p; }
       |                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
 conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -336,7 +356,7 @@ checked program was:
 14: int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_column_database_name; return !p; }
 /* end */
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -lruby-2.7 -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -360,12 +380,16 @@ checked program was:
 
 have_func: checking for sqlite3_enable_load_extension()... -------------------- yes
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -lruby-2.7 -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:14:57: error: ‘sqlite3_enable_load_extension’ undeclared (first use in this function)
    14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_enable_load_extension; return !p; }
       |                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -384,7 +408,7 @@ checked program was:
 14: int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_enable_load_extension; return !p; }
 /* end */
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -lruby-2.7 -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -408,12 +432,16 @@ checked program was:
 
 have_func: checking for sqlite3_load_extension()... -------------------- yes
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -lruby-2.7 -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:14:57: error: ‘sqlite3_load_extension’ undeclared (first use in this function)
    14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_load_extension; return !p; }
       |                                                         ^~~~~~~~~~~~~~~~~~~~~~
 conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -432,7 +460,7 @@ checked program was:
 14: int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_load_extension; return !p; }
 /* end */
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -lruby-2.7 -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -456,12 +484,16 @@ checked program was:
 
 have_func: checking for sqlite3_open_v2()... -------------------- yes
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -lruby-2.7 -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:14:57: error: ‘sqlite3_open_v2’ undeclared (first use in this function)
    14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_open_v2; return !p; }
       |                                                         ^~~~~~~~~~~~~~~
 conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -480,7 +512,7 @@ checked program was:
 14: int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_open_v2; return !p; }
 /* end */
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -lruby-2.7 -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -504,12 +536,16 @@ checked program was:
 
 have_func: checking for sqlite3_prepare_v2()... -------------------- yes
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -lruby-2.7 -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:14:57: error: ‘sqlite3_prepare_v2’ undeclared (first use in this function)
    14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_prepare_v2; return !p; }
       |                                                         ^~~~~~~~~~~~~~~~~~
 conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -528,7 +564,7 @@ checked program was:
 14: int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_prepare_v2; return !p; }
 /* end */
 
-"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -lruby-2.7 -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lsqlite3 -ldl -lpthread  -lsqlite3 -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lsqlite3 -ldl -lpthread  -lsqlite3 -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -552,7 +588,7 @@ checked program was:
 
 have_type: checking for sqlite3_int64 in sqlite3.h... -------------------- yes
 
-"x86_64-linux-gnu-gcc -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC    -c conftest.c"
+"gcc -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC    -c conftest.c"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -568,7 +604,7 @@ checked program was:
 
 have_type: checking for sqlite3_uint64 in sqlite3.h... -------------------- yes
 
-"x86_64-linux-gnu-gcc -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I.  -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC    -c conftest.c"
+"gcc -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.     -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC    -c conftest.c"
 checked program was:
 /* begin */
 1: #include "ruby.h"
