@@ -20,4 +20,4 @@ jobs:
       - name: Yarn update
         run: yarn install --check-files
       - name: Run linting without autocorrect
-        run: bundle exec rake "lint_and_format[disableautocorrect]"
+        run: DISABLE_BOOTSNAP=true bundle exec rake "lint_and_format[disableautocorrect]"
