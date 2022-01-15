@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'solargraph'
 
 # use bootstrap for frontend (webpacker > 5 instead of > 4.1)
-gem 'webpacker', '~> 4.1'
+gem 'webpacker', '> 5'
 
 # need a debugger
 gem 'pry-byebug'
