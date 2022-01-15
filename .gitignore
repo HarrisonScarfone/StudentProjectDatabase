@@ -39,3 +39,6 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# Ignore the Gemfile.lock to prevent interference with gem caching in CI actions
+Gemfile.lock
