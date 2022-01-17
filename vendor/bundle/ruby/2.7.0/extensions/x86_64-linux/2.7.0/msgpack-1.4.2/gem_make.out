@@ -1,5 +1,5 @@
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/msgpack-1.4.2/ext/msgpack
-/usr/share/rvm/rubies/ruby-2.7.0/bin/ruby -I /usr/share/rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20220115-20128-1sd1wew.rb extconf.rb
+/usr/share/rvm/rubies/ruby-2.7.4/bin/ruby -I /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0 -r ./siteconf20220115-8458-1vm5gx3.rb extconf.rb
 checking for ruby/st.h... yes
 checking for st.h... yes
 checking for rb_str_replace() in ruby.h... yes
@@ -25,16 +25,12 @@ buffer_class.c:261:17: warning: passing argument 3 of ‘rb_rescue2’ from inco
       |                 ^~~~~~~~~~~~~~~~~~~~
       |                 |
       |                 VALUE (*)(VALUE) {aka long unsigned int (*)(long unsigned int)}
-In file included from /usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby.h:33,
+In file included from /usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby.h:33,
                  from compat.h:22,
                  from buffer_class.c:19:
-/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/ruby.h:1988:40: note: expected ‘VALUE (*)(VALUE,  VALUE)’ {aka ‘long unsigned int (*)(long unsigned int,  long unsigned int)’} but argument is of type ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’}
+/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1988:40: note: expected ‘VALUE (*)(VALUE,  VALUE)’ {aka ‘long unsigned int (*)(long unsigned int,  long unsigned int)’} but argument is of type ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’}
  1988 | VALUE rb_rescue2(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE,...);
       |                                        ^~~~~~~~~~~~~~~~~~~~~
-buffer_class.c: At top level:
-cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
-cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
-cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
 compiling extension_value_class.c
 compiling factory_class.c
 compiling packer.c
@@ -47,10 +43,6 @@ packer_ext_registry.h:129:9: warning: ‘lookup_class’ may be used uninitializ
 packer_ext_registry.h:85:11: note: ‘lookup_class’ was declared here
    85 |     VALUE lookup_class;
       |           ^~~~~~~~~~~~
-packer.c: At top level:
-cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
-cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
-cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
 compiling packer_class.c
 compiling packer_ext_registry.c
 compiling rbinit.c
@@ -63,24 +55,21 @@ unpacker_class.c:316:17: warning: passing argument 3 of ‘rb_rescue2’ from in
       |                 ^~~~~~~~~~~~~~~~~~~~~~~~
       |                 |
       |                 VALUE (*)(VALUE) {aka long unsigned int (*)(long unsigned int)}
-In file included from /usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby.h:33,
+In file included from /usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby.h:33,
                  from compat.h:22,
                  from buffer.h:21,
                  from unpacker.h:21,
                  from unpacker_class.c:19:
-/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/ruby.h:1988:40: note: expected ‘VALUE (*)(VALUE,  VALUE)’ {aka ‘long unsigned int (*)(long unsigned int,  long unsigned int)’} but argument is of type ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’}
+/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1988:40: note: expected ‘VALUE (*)(VALUE,  VALUE)’ {aka ‘long unsigned int (*)(long unsigned int,  long unsigned int)’} but argument is of type ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’}
  1988 | VALUE rb_rescue2(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE,...);
       |                                        ^~~~~~~~~~~~~~~~~~~~~
 At top level:
 unpacker_class.c:225:14: warning: ‘Unpacker_peek_next_type’ defined but not used [-Wunused-function]
   225 | static VALUE Unpacker_peek_next_type(VALUE self)
       |              ^~~~~~~~~~~~~~~~~~~~~~~
-cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
-cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
-cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
 compiling unpacker_ext_registry.c
 linking shared-object msgpack/msgpack.so
 
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/msgpack-1.4.2/ext/msgpack
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 msgpack.so ./.gem.20220115-20128-88zos1/msgpack
+/usr/bin/install -c -m 0755 msgpack.so ./.gem.20220115-8458-1p7g4l1/msgpack

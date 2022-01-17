@@ -1,6 +1,6 @@
 have_library: checking for BIO_read() in -lcrypto... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -11,16 +11,12 @@ checked program was:
 6: }
 /* end */
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lcrypto  -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby -lcrypto  -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:14:57: error: ‘BIO_read’ undeclared (first use in this function)
    14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))BIO_read; return !p; }
       |                                                         ^~~~~~~~
 conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
-conftest.c: At top level:
-cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
-cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
-cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -39,7 +35,7 @@ checked program was:
 14: int t(void) { void ((*volatile p)()); p = (void ((*)()))BIO_read; return !p; }
 /* end */
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lcrypto  -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby -lcrypto  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -63,16 +59,12 @@ checked program was:
 
 have_library: checking for SSL_CTX_new() in -lssl... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic    -lcrypto  -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lssl -lcrypto  -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic    -lcrypto  -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby -lssl -lcrypto  -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:14:57: error: ‘SSL_CTX_new’ undeclared (first use in this function)
    14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))SSL_CTX_new; return !p; }
       |                                                         ^~~~~~~~~~~
 conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
-conftest.c: At top level:
-cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
-cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
-cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -91,7 +83,7 @@ checked program was:
 14: int t(void) { void ((*volatile p)()); p = (void ((*)()))SSL_CTX_new; return !p; }
 /* end */
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic    -lcrypto  -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lssl -lcrypto  -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic    -lcrypto  -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby -lssl -lcrypto  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -115,7 +107,7 @@ checked program was:
 
 have_header: checking for openssl/bio.h... -------------------- yes
 
-"gcc -E -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c -o conftest.i"
+"gcc -E -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -127,7 +119,7 @@ checked program was:
 
 have_func: checking for DTLS_method() in openssl/ssl.h... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic    -lssl -lcrypto  -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lssl -lcrypto  -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic    -lssl -lcrypto  -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby -lssl -lcrypto  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -152,7 +144,7 @@ checked program was:
 
 have_func: checking for TLS_server_method() in openssl/ssl.h... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic    -lssl -lcrypto  -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby -lssl -lcrypto  -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic    -lssl -lcrypto  -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby -lssl -lcrypto  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -177,7 +169,7 @@ checked program was:
 
 have_macro: checking for SSL_CTX_set_min_proto_version in openssl/ssl.h... -------------------- yes
 
-"gcc -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC   -c conftest.c"
+"gcc -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC   -c conftest.c"
 checked program was:
 /* begin */
 1: #include "ruby.h"

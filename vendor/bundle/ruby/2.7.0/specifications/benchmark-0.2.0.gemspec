@@ -15,8 +15,8 @@ Gem::Specification.new do |s|
   s.email = ["matz@ruby-lang.org".freeze]
   s.homepage = "https://github.com/ruby/benchmark".freeze
   s.licenses = ["Ruby".freeze, "BSD-2-Clause".freeze]
-  s.rubygems_version = "3.1.2".freeze
+  s.rubygems_version = "3.1.6".freeze
   s.summary = "a performance benchmarking library".freeze
 
-  s.installed_by_version = "3.1.2" if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.1.6" if s.respond_to? :installed_by_version
 end

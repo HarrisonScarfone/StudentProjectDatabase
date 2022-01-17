@@ -1,6 +1,6 @@
 have_header: checking for ruby/st.h... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -11,7 +11,7 @@ checked program was:
 6: }
 /* end */
 
-"gcc -E -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c -o conftest.i"
+"gcc -E -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -23,14 +23,11 @@ checked program was:
 
 have_header: checking for st.h... -------------------- yes
 
-"gcc -E -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC  conftest.c -o conftest.i"
+"gcc -E -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC  conftest.c -o conftest.i"
 In file included from conftest.c:3:
-/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward/st.h:2:2: warning: #warning use "ruby/st.h" instead of bare "st.h" [-Wcpp]
+/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward/st.h:2:2: warning: #warning use "ruby/st.h" instead of bare "st.h" [-Wcpp]
     2 | #warning use "ruby/st.h" instead of bare "st.h"
       |  ^~~~~~~
-cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
-cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
-cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -42,7 +39,7 @@ checked program was:
 
 have_func: checking for rb_str_replace() in ruby.h... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -67,7 +64,7 @@ checked program was:
 
 have_func: checking for rb_intern_str() in ruby.h... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -92,17 +89,13 @@ checked program was:
 
 have_func: checking for rb_enc_interned_str() in ruby.h... -------------------- no
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:16:57: error: ‘rb_enc_interned_str’ undeclared (first use in this function); did you mean ‘rb_sym_interned_p’?
    16 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_enc_interned_str; return !p; }
       |                                                         ^~~~~~~~~~~~~~~~~~~
       |                                                         rb_sym_interned_p
 conftest.c:16:57: note: each undeclared identifier is reported only once for each function it appears in
-conftest.c: At top level:
-cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
-cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
-cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -123,8 +116,8 @@ checked program was:
 16: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_enc_interned_str; return !p; }
 /* end */
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
-/usr/bin/ld: /tmp/ccPHbtaW.o: in function `t':
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
+/usr/bin/ld: /tmp/ccEykQlo.o: in function `t':
 /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/msgpack-1.4.2/ext/msgpack/conftest.c:17: undefined reference to `rb_enc_interned_str'
 collect2: error: ld returned 1 exit status
 checked program was:
@@ -152,7 +145,7 @@ checked program was:
 
 have_func: checking for rb_sym2str() in ruby.h... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -177,7 +170,7 @@ checked program was:
 
 have_func: checking for rb_str_intern() in ruby.h... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -202,7 +195,7 @@ checked program was:
 
 have_func: checking for rb_block_lambda() in ruby.h... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -227,7 +220,7 @@ checked program was:
 
 have_func: checking for rb_hash_dup() in ruby.h... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -252,7 +245,7 @@ checked program was:
 
 have_func: checking for rb_hash_clear() in ruby.h... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.0/include/ruby-2.7.0 -I.    -O3 -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable  -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.0/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.0/lib -L/usr/share/rvm/rubies/ruby-2.7.0/lib -lruby  -lm   -lc"
+"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
