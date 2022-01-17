@@ -1,15 +1,15 @@
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
-/usr/share/rvm/rubies/ruby-2.7.4/bin/ruby -I /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0 -r ./siteconf20220115-8458-1tqpsad.rb extconf.rb
+/usr/bin/ruby2.7 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20220117-31051-tosa25.rb extconf.rb
 creating Makefile
 
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
-make "DESTDIR=" clean
+make DESTDIR\= clean
 
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
-make "DESTDIR="
+make DESTDIR\=
 compiling cruby.c
 linking shared-object skiptrace/internal/cruby.so
 
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
-make "DESTDIR=" install
-/usr/bin/install -c -m 0755 cruby.so ./.gem.20220115-8458-bbpf4o/skiptrace/internal
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20220117-31051-pf0qz6/skiptrace/internal

@@ -1,6 +1,6 @@
 have_header: checking for ruby/st.h... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-2.7  -lm   -lc"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -11,7 +11,7 @@ checked program was:
 6: }
 /* end */
 
-"gcc -E -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC  conftest.c -o conftest.i"
+"x86_64-linux-gnu-gcc -E -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -23,9 +23,9 @@ checked program was:
 
 have_header: checking for st.h... -------------------- yes
 
-"gcc -E -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC  conftest.c -o conftest.i"
+"x86_64-linux-gnu-gcc -E -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c -o conftest.i"
 In file included from conftest.c:3:
-/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward/st.h:2:2: warning: #warning use "ruby/st.h" instead of bare "st.h" [-Wcpp]
+/usr/include/ruby-2.7.0/ruby/backward/st.h:2:2: warning: #warning use "ruby/st.h" instead of bare "st.h" [-Wcpp]
     2 | #warning use "ruby/st.h" instead of bare "st.h"
       |  ^~~~~~~
 checked program was:
@@ -39,7 +39,7 @@ checked program was:
 
 have_func: checking for rb_str_replace() in ruby.h... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-2.7  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -64,7 +64,7 @@ checked program was:
 
 have_func: checking for rb_intern_str() in ruby.h... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-2.7  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -89,7 +89,7 @@ checked program was:
 
 have_func: checking for rb_enc_interned_str() in ruby.h... -------------------- no
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-2.7  -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:16:57: error: ‘rb_enc_interned_str’ undeclared (first use in this function); did you mean ‘rb_sym_interned_p’?
    16 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_enc_interned_str; return !p; }
@@ -116,8 +116,8 @@ checked program was:
 16: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_enc_interned_str; return !p; }
 /* end */
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
-/usr/bin/ld: /tmp/ccEykQlo.o: in function `t':
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-2.7  -lm   -lc"
+/usr/bin/ld: /tmp/ccJgD3gZ.o: in function `t':
 /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/msgpack-1.4.2/ext/msgpack/conftest.c:17: undefined reference to `rb_enc_interned_str'
 collect2: error: ld returned 1 exit status
 checked program was:
@@ -145,7 +145,7 @@ checked program was:
 
 have_func: checking for rb_sym2str() in ruby.h... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-2.7  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -170,7 +170,7 @@ checked program was:
 
 have_func: checking for rb_str_intern() in ruby.h... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-2.7  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -195,7 +195,7 @@ checked program was:
 
 have_func: checking for rb_block_lambda() in ruby.h... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-2.7  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -220,7 +220,7 @@ checked program was:
 
 have_func: checking for rb_hash_dup() in ruby.h... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-2.7  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -245,7 +245,7 @@ checked program was:
 
 have_func: checking for rb_hash_clear() in ruby.h... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-2.7  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"

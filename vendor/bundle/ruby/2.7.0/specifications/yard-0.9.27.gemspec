@@ -16,10 +16,10 @@ Gem::Specification.new do |s|
   s.files = ["bin/yard".freeze, "bin/yardoc".freeze, "bin/yri".freeze]
   s.homepage = "http://yardoc.org".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "3.1.6".freeze
+  s.rubygems_version = "3.2.5".freeze
   s.summary = "Documentation tool for consistent and usable documentation in Ruby.".freeze
 
-  s.installed_by_version = "3.1.6" if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.2.5" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4

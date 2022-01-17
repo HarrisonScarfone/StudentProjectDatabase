@@ -1,6 +1,6 @@
 have_library: checking for BIO_read() in -lcrypto... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby  -lm   -lc"
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-2.7  -lm   -lc"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -11,7 +11,7 @@ checked program was:
 6: }
 /* end */
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby -lcrypto  -lm   -lc"
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-2.7 -lcrypto  -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:14:57: error: ‘BIO_read’ undeclared (first use in this function)
    14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))BIO_read; return !p; }
@@ -35,7 +35,7 @@ checked program was:
 14: int t(void) { void ((*volatile p)()); p = (void ((*)()))BIO_read; return !p; }
 /* end */
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby -lcrypto  -lm   -lc"
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -lruby-2.7 -lcrypto  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -59,7 +59,7 @@ checked program was:
 
 have_library: checking for SSL_CTX_new() in -lssl... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic    -lcrypto  -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby -lssl -lcrypto  -lm   -lc"
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic    -lcrypto  -lruby-2.7 -lssl -lcrypto  -lm   -lc"
 conftest.c: In function ‘t’:
 conftest.c:14:57: error: ‘SSL_CTX_new’ undeclared (first use in this function)
    14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))SSL_CTX_new; return !p; }
@@ -83,7 +83,7 @@ checked program was:
 14: int t(void) { void ((*volatile p)()); p = (void ((*)()))SSL_CTX_new; return !p; }
 /* end */
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic    -lcrypto  -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby -lssl -lcrypto  -lm   -lc"
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic    -lcrypto  -lruby-2.7 -lssl -lcrypto  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -107,7 +107,7 @@ checked program was:
 
 have_header: checking for openssl/bio.h... -------------------- yes
 
-"gcc -E -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC  conftest.c -o conftest.i"
+"x86_64-linux-gnu-gcc -E -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -119,7 +119,7 @@ checked program was:
 
 have_func: checking for DTLS_method() in openssl/ssl.h... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic    -lssl -lcrypto  -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby -lssl -lcrypto  -lm   -lc"
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic    -lssl -lcrypto  -lruby-2.7 -lssl -lcrypto  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -144,7 +144,7 @@ checked program was:
 
 have_func: checking for TLS_server_method() in openssl/ssl.h... -------------------- yes
 
-"gcc -o conftest -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/usr/share/rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic    -lssl -lcrypto  -Wl,-rpath,/usr/share/rvm/rubies/ruby-2.7.4/lib -L/usr/share/rvm/rubies/ruby-2.7.4/lib -lruby -lssl -lcrypto  -lm   -lc"
+"x86_64-linux-gnu-gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic    -lssl -lcrypto  -lruby-2.7 -lssl -lcrypto  -lm   -lc"
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -169,7 +169,7 @@ checked program was:
 
 have_macro: checking for SSL_CTX_set_min_proto_version in openssl/ssl.h... -------------------- yes
 
-"gcc -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC   -c conftest.c"
+"x86_64-linux-gnu-gcc -I/usr/include/x86_64-linux-gnu/ruby-2.7.0 -I/usr/include/ruby-2.7.0/ruby/backward -I/usr/include/ruby-2.7.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -ffile-prefix-map=/build/ruby2.7-rrLxhI/ruby2.7-2.7.4=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC   -c conftest.c"
 checked program was:
 /* begin */
 1: #include "ruby.h"

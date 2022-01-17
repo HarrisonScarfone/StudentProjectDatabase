@@ -1,5 +1,5 @@
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.4.2/ext/sqlite3
-/usr/share/rvm/rubies/ruby-2.7.4/bin/ruby -I /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0 -r ./siteconf20220115-8458-2z1yf9.rb extconf.rb
+/usr/bin/ruby2.7 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20220117-31051-1nokskg.rb extconf.rb
 checking for sqlite3.h... yes
 checking for pthread_create() in -lpthread... yes
 checking for -ldl... yes
@@ -18,10 +18,10 @@ checking for sqlite3_uint64 in sqlite3.h... yes
 creating Makefile
 
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.4.2/ext/sqlite3
-make "DESTDIR=" clean
+make DESTDIR\= clean
 
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.4.2/ext/sqlite3
-make "DESTDIR="
+make DESTDIR\=
 compiling aggregator.c
 compiling backup.c
 compiling database.c
@@ -72,5 +72,5 @@ compiling statement.c
 linking shared-object sqlite3/sqlite3_native.so
 
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.4.2/ext/sqlite3
-make "DESTDIR=" install
-/usr/bin/install -c -m 0755 sqlite3_native.so ./.gem.20220115-8458-b296ey/sqlite3
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 sqlite3_native.so ./.gem.20220117-31051-zyjsvy/sqlite3

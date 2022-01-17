@@ -15,10 +15,10 @@ Gem::Specification.new do |s|
   s.files = ["bin/reverse_markdown".freeze]
   s.homepage = "http://github.com/xijo/reverse_markdown".freeze
   s.licenses = ["WTFPL".freeze]
-  s.rubygems_version = "3.1.6".freeze
+  s.rubygems_version = "3.2.5".freeze
   s.summary = "Convert html code into markdown.".freeze
 
-  s.installed_by_version = "3.1.6" if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.2.5" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4

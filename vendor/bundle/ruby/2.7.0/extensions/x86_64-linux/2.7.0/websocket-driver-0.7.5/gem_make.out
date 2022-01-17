@@ -1,15 +1,15 @@
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.5/ext/websocket-driver
-/usr/share/rvm/rubies/ruby-2.7.4/bin/ruby -I /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0 -r ./siteconf20220115-8458-1n7wu1e.rb extconf.rb
+/usr/bin/ruby2.7 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20220117-31051-1pum9xj.rb extconf.rb
 creating Makefile
 
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.5/ext/websocket-driver
-make "DESTDIR=" clean
+make DESTDIR\= clean
 
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.5/ext/websocket-driver
-make "DESTDIR="
+make DESTDIR\=
 compiling websocket_mask.c
 linking shared-object websocket_mask.so
 
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.5/ext/websocket-driver
-make "DESTDIR=" install
-/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20220115-8458-1ilgw80
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20220117-31051-3jei4e

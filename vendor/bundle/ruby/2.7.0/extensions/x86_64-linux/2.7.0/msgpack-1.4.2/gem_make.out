@@ -1,5 +1,5 @@
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/msgpack-1.4.2/ext/msgpack
-/usr/share/rvm/rubies/ruby-2.7.4/bin/ruby -I /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0 -r ./siteconf20220115-8458-1vm5gx3.rb extconf.rb
+/usr/bin/ruby2.7 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20220117-31051-1qyw6g.rb extconf.rb
 checking for ruby/st.h... yes
 checking for st.h... yes
 checking for rb_str_replace() in ruby.h... yes
@@ -13,10 +13,10 @@ checking for rb_hash_clear() in ruby.h... yes
 creating Makefile
 
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/msgpack-1.4.2/ext/msgpack
-make "DESTDIR=" clean
+make DESTDIR\= clean
 
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/msgpack-1.4.2/ext/msgpack
-make "DESTDIR="
+make DESTDIR\=
 compiling buffer.c
 compiling buffer_class.c
 buffer_class.c: In function ‘read_until_eof’:
@@ -25,10 +25,10 @@ buffer_class.c:261:17: warning: passing argument 3 of ‘rb_rescue2’ from inco
       |                 ^~~~~~~~~~~~~~~~~~~~
       |                 |
       |                 VALUE (*)(VALUE) {aka long unsigned int (*)(long unsigned int)}
-In file included from /usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby.h:33,
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
                  from compat.h:22,
                  from buffer_class.c:19:
-/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1988:40: note: expected ‘VALUE (*)(VALUE,  VALUE)’ {aka ‘long unsigned int (*)(long unsigned int,  long unsigned int)’} but argument is of type ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’}
+/usr/include/ruby-2.7.0/ruby/ruby.h:1988:40: note: expected ‘VALUE (*)(VALUE,  VALUE)’ {aka ‘long unsigned int (*)(long unsigned int,  long unsigned int)’} but argument is of type ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’}
  1988 | VALUE rb_rescue2(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE,...);
       |                                        ^~~~~~~~~~~~~~~~~~~~~
 compiling extension_value_class.c
@@ -55,12 +55,12 @@ unpacker_class.c:316:17: warning: passing argument 3 of ‘rb_rescue2’ from in
       |                 ^~~~~~~~~~~~~~~~~~~~~~~~
       |                 |
       |                 VALUE (*)(VALUE) {aka long unsigned int (*)(long unsigned int)}
-In file included from /usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby.h:33,
+In file included from /usr/include/ruby-2.7.0/ruby.h:33,
                  from compat.h:22,
                  from buffer.h:21,
                  from unpacker.h:21,
                  from unpacker_class.c:19:
-/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:1988:40: note: expected ‘VALUE (*)(VALUE,  VALUE)’ {aka ‘long unsigned int (*)(long unsigned int,  long unsigned int)’} but argument is of type ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’}
+/usr/include/ruby-2.7.0/ruby/ruby.h:1988:40: note: expected ‘VALUE (*)(VALUE,  VALUE)’ {aka ‘long unsigned int (*)(long unsigned int,  long unsigned int)’} but argument is of type ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’}
  1988 | VALUE rb_rescue2(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE,...);
       |                                        ^~~~~~~~~~~~~~~~~~~~~
 At top level:
@@ -71,5 +71,5 @@ compiling unpacker_ext_registry.c
 linking shared-object msgpack/msgpack.so
 
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/msgpack-1.4.2/ext/msgpack
-make "DESTDIR=" install
-/usr/bin/install -c -m 0755 msgpack.so ./.gem.20220115-8458-1p7g4l1/msgpack
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 msgpack.so ./.gem.20220117-31051-19t83pi/msgpack

@@ -1,22 +1,22 @@
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/jaro_winkler-1.5.4/ext/jaro_winkler
-/usr/share/rvm/rubies/ruby-2.7.4/bin/ruby -I /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0 -r ./siteconf20220115-8458-1d1ft4q.rb extconf.rb
+/usr/bin/ruby2.7 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20220117-31051-1atu54k.rb extconf.rb
 creating Makefile
 
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/jaro_winkler-1.5.4/ext/jaro_winkler
-make "DESTDIR=" clean
+make DESTDIR\= clean
 
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/jaro_winkler-1.5.4/ext/jaro_winkler
-make "DESTDIR="
+make DESTDIR\=
 compiling adj_matrix.c
 compiling codepoints.c
 compiling jaro.c
 compiling jaro_winkler.c
-In file included from /usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/ruby.h:2148,
-                 from /usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby.h:33,
+In file included from /usr/include/ruby-2.7.0/ruby/ruby.h:2148,
+                 from /usr/include/ruby-2.7.0/ruby.h:33,
                  from codepoints.h:2,
                  from jaro_winkler.c:1:
 jaro_winkler.c: In function ‘Init_jaro_winkler_ext’:
-/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/intern.h:1218:137: warning: passing argument 3 of ‘rb_define_singleton_methodm1’ from incompatible pointer type [-Wincompatible-pointer-types]
+/usr/include/ruby-2.7.0/ruby/intern.h:1218:137: warning: passing argument 3 of ‘rb_define_singleton_methodm1’ from incompatible pointer type [-Wincompatible-pointer-types]
  1218 | #define rb_define_singleton_method(klass, mid, func, arity) rb_define_singleton_method_choose_prototypem3((arity),(func))((klass),(mid),(func),(arity));
       |                                                                                                                                         ^~~~~~
       |                                                                                                                                         |
@@ -24,19 +24,19 @@ jaro_winkler.c: In function ‘Init_jaro_winkler_ext’:
 jaro_winkler.c:19:3: note: in expansion of macro ‘rb_define_singleton_method’
    19 |   rb_define_singleton_method(rb_mJaroWinkler, "distance",
       |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
-/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/intern.h:1195:27: note: expected ‘VALUE (*)(int,  union <anonymous>,  VALUE)’ {aka ‘long unsigned int (*)(int,  union <anonymous>,  long unsigned int)’} but argument is of type ‘VALUE (*)(size_t,  VALUE *, VALUE)’ {aka ‘long unsigned int (*)(long unsigned int,  long unsigned int *, long unsigned int)’}
+/usr/include/ruby-2.7.0/ruby/intern.h:1195:27: note: expected ‘VALUE (*)(int,  union <anonymous>,  VALUE)’ {aka ‘long unsigned int (*)(int,  union <anonymous>,  long unsigned int)’} but argument is of type ‘VALUE (*)(size_t,  VALUE *, VALUE)’ {aka ‘long unsigned int (*)(long unsigned int,  long unsigned int *, long unsigned int)’}
  1195 | RB_METHOD_DEFINITION_DECL(rb_define_singleton_method, (2,3), (VALUE klass, const char *name), (klass, name))
       |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
-/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/intern.h:1042:82: note: in definition of macro ‘RB_METHOD_DEFINITION_DECL_C’
+/usr/include/ruby-2.7.0/ruby/intern.h:1042:82: note: in definition of macro ‘RB_METHOD_DEFINITION_DECL_C’
  1042 |     __attribute__((__unused__,__weakref__(#def),__nonnull__ nonnull))static void defname(RB_UNWRAP_MACRO decl,VALUE(*func)funcargs,int arity);
       |                                                                                  ^~~~~~~
-/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/intern.h:1092:1: note: in expansion of macro ‘RB_METHOD_DEFINITION_DECL_M1’
+/usr/include/ruby-2.7.0/ruby/intern.h:1092:1: note: in expansion of macro ‘RB_METHOD_DEFINITION_DECL_M1’
  1092 | RB_METHOD_DEFINITION_DECL_M1(def,nonnull,def##m1,decl,vars) /* END */
       | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/intern.h:1195:1: note: in expansion of macro ‘RB_METHOD_DEFINITION_DECL’
+/usr/include/ruby-2.7.0/ruby/intern.h:1195:1: note: in expansion of macro ‘RB_METHOD_DEFINITION_DECL’
  1195 | RB_METHOD_DEFINITION_DECL(rb_define_singleton_method, (2,3), (VALUE klass, const char *name), (klass, name))
       | ^~~~~~~~~~~~~~~~~~~~~~~~~
-/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/intern.h:1218:137: warning: passing argument 3 of ‘rb_define_singleton_methodm1’ from incompatible pointer type [-Wincompatible-pointer-types]
+/usr/include/ruby-2.7.0/ruby/intern.h:1218:137: warning: passing argument 3 of ‘rb_define_singleton_methodm1’ from incompatible pointer type [-Wincompatible-pointer-types]
  1218 | #define rb_define_singleton_method(klass, mid, func, arity) rb_define_singleton_method_choose_prototypem3((arity),(func))((klass),(mid),(func),(arity));
       |                                                                                                                                         ^~~~~~
       |                                                                                                                                         |
@@ -44,20 +44,20 @@ jaro_winkler.c:19:3: note: in expansion of macro ‘rb_define_singleton_method�
 jaro_winkler.c:21:3: note: in expansion of macro ‘rb_define_singleton_method’
    21 |   rb_define_singleton_method(rb_mJaroWinkler, "jaro_distance", rb_jaro_distance,
       |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
-/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/intern.h:1195:27: note: expected ‘VALUE (*)(int,  union <anonymous>,  VALUE)’ {aka ‘long unsigned int (*)(int,  union <anonymous>,  long unsigned int)’} but argument is of type ‘VALUE (*)(size_t,  VALUE *, VALUE)’ {aka ‘long unsigned int (*)(long unsigned int,  long unsigned int *, long unsigned int)’}
+/usr/include/ruby-2.7.0/ruby/intern.h:1195:27: note: expected ‘VALUE (*)(int,  union <anonymous>,  VALUE)’ {aka ‘long unsigned int (*)(int,  union <anonymous>,  long unsigned int)’} but argument is of type ‘VALUE (*)(size_t,  VALUE *, VALUE)’ {aka ‘long unsigned int (*)(long unsigned int,  long unsigned int *, long unsigned int)’}
  1195 | RB_METHOD_DEFINITION_DECL(rb_define_singleton_method, (2,3), (VALUE klass, const char *name), (klass, name))
       |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
-/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/intern.h:1042:82: note: in definition of macro ‘RB_METHOD_DEFINITION_DECL_C’
+/usr/include/ruby-2.7.0/ruby/intern.h:1042:82: note: in definition of macro ‘RB_METHOD_DEFINITION_DECL_C’
  1042 |     __attribute__((__unused__,__weakref__(#def),__nonnull__ nonnull))static void defname(RB_UNWRAP_MACRO decl,VALUE(*func)funcargs,int arity);
       |                                                                                  ^~~~~~~
-/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/intern.h:1092:1: note: in expansion of macro ‘RB_METHOD_DEFINITION_DECL_M1’
+/usr/include/ruby-2.7.0/ruby/intern.h:1092:1: note: in expansion of macro ‘RB_METHOD_DEFINITION_DECL_M1’
  1092 | RB_METHOD_DEFINITION_DECL_M1(def,nonnull,def##m1,decl,vars) /* END */
       | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/usr/share/rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/intern.h:1195:1: note: in expansion of macro ‘RB_METHOD_DEFINITION_DECL’
+/usr/include/ruby-2.7.0/ruby/intern.h:1195:1: note: in expansion of macro ‘RB_METHOD_DEFINITION_DECL’
  1195 | RB_METHOD_DEFINITION_DECL(rb_define_singleton_method, (2,3), (VALUE klass, const char *name), (klass, name))
       | ^~~~~~~~~~~~~~~~~~~~~~~~~
 linking shared-object jaro_winkler/jaro_winkler_ext.so
 
 current directory: /home/thekid/projects/site/capstone/vendor/bundle/ruby/2.7.0/gems/jaro_winkler-1.5.4/ext/jaro_winkler
-make "DESTDIR=" install
-/usr/bin/install -c -m 0755 jaro_winkler_ext.so ./.gem.20220115-8458-lr9nug/jaro_winkler
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 jaro_winkler_ext.so ./.gem.20220117-31051-1g6j0x0/jaro_winkler
