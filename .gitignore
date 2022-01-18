@@ -41,3 +41,6 @@ yarn-debug.log*
 .yarn-integrity
 
 Gemfile.lock
+
+# Ignore Invidual User Settings for VSCode
+.vscode
