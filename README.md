@@ -15,6 +15,7 @@
   - [Installing Dependencies](#installing-dependencies)
   - [Running a Local Version of the Server](#running-a-local-version-of-the-server)
   - [Making Your First Change](#making-your-first-change)
+  - [Starting to Contribute](#starting-to-contribute)
 
 ## About the Project
 
@@ -105,4 +106,26 @@ localhost:3000
 
 ## Making Your First Change
 
-The `git` integration in `VSCode` is freakin' sweet, and I highly recommend using it. TODO: insert video link. Since this is going to seem complicated if you have never used `git` and `GitHub` before, I will provide a video walk through [here](). 
+The `git` integration in `VSCode` is freakin' sweet, and I highly recommend using it. TODO: insert video link. Since this is going to seem complicated if you have never used `git` and `GitHub` before, I will provide a video walk through [here]().
+
+## Starting to Contribute
+
+This assumes you have completed the [making your first change](#making-your-first-change) video, or have knowledge of `git` and `GitHub`.
+
+Check out the [project board](https://github.com/HarrisonScarfone/capstone_repo/projects/1)! A video walk through of our workflow can be found in the video in the [making your first change section](#making-your-first-change). If you've done this sort of thing before, any issue under `Backlog` is fair game. When it comes to PRs (pull requests), we enforce the following rules, which were covered in the video:
+
+1. You *must* have at least 1 review with approval. This will increase to 2 as soon as we have enough contributors to be feasible.
+2. The CI (continuous integration) *must* pass to merge. **THERE ARE NO EXCEPTIONS TO THIS**. We have extremely basic CI and all tests and the linter/formatter must pass, its not asking much :).
+3. You *must* have unit tests corresponding to any Ruby code you write. All files in `views` are exempt from code testing, but must be verified with before and after screenshots in the PR. Existing `.rake` files are currently the only exception and there will be **ABSOLUTELY NO ADDITIONS** to this rule.
+4. You must verify that your code works on a local server instance before merging.
+5. All PRs must be based off of and linked to an issue. If there isn't one for what you want to do, make one.
+6. *Do not* approve PRs that are clearly in violation of the above rules. You *will* share *equally* in the blame if you approve breaking changes.
+
+> :warning: **Abuse of the Above Requirements Could Result in Your Ability to Contribute Being Revoked**: Sorry to get serious, but DBAA. All contributions here are volunteer work, and not following the rules ruins it for other people which isn't fair.
+
+>**_NOTE_**: Please Please Please ensure that you run tests locally before pushing. Both commands shown below must pass, and we only get so many compute minutes to run CI on a free repo.
+
+```bash
+bundle exec rake lint_and_format
+rails test
+```
