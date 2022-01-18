@@ -42,7 +42,7 @@ There are a few options for you to choose from, but I recommend setting up a lin
 
 ```bash
 cd ~
-mkdir <folder name>
+mkdir src
 cd src
 git clone https://github.com/HarrisonScarfone/capstone_repo.git
 ```
@@ -66,6 +66,9 @@ Once you have `VSCode` open, the following `addons` are recommended. Instruction
 6. VSCode Ruby
 
 ### Ensure You Have the Correct Version of Ruby
+
+> :warning: **If you have not done something like this before**: Take it slow and make sure you follow the directions.  It can be challenging to undo installation of programming languages on your computer (*looking at you windows*) if you do something incorrectly. Just stick to the instructions and you'll be fine!
+
 The version of Ruby we are using can be found in the `.ruby-version` file at the top level in the cloned directory. Assuming you cloned the directory with the steps above, you can check the contents by opening the file `.ruby-version` or if you named your folder `src`, you can use the command shown below.
 
 ```bash
